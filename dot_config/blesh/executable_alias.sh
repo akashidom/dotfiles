@@ -1,10 +1,10 @@
 # File operation aliases
-alias ls='eza --icons'
-alias ll='eza -l --icons'
-alias la='eza -a --icons'
-alias lla='eza -la --icons'
-alias lt='eza --tree --icons'
-alias l.='eza -d .* --icons'
+alias ls='eza --icons=auto'
+alias ll='eza -l --icons=auto'
+alias la='eza -a --icons=auto'
+alias lla='eza -la --icons=auto'
+alias lt='eza --tree --icons=auto'
+alias l.='eza -d .* --icons=auto'
 alias cd='z'
 alias cp='cp -iv'
 alias mv='mv -iv'
@@ -38,14 +38,17 @@ alias install='paru -S'
 alias remove='paru -R'
 alias search='paru -Qs'
 alias info='paru -Qi'
+# Chezmoi alias
+alias chezmoi='chezmoi -v'
+alias cz='chezmoi'
 
 # Navigation aliases
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
+# Shortcuts for going up directories
+for i in {1..100}; do
+    alias .$i="$(printf 'cd ' && printf '../%.0s' {1..$i})"
+done
+# Other shortcuts
 alias ~='cd ~'
-alias --='cd -'
 alias b='cd -'
 alias d='cd ~/Desktop'
 alias D='cd ~/Documents'
@@ -89,7 +92,6 @@ alias .2='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-alias --='cd -'
 alias 1='cd -'
 alias 2='cd -2'
 alias 3='cd -3'

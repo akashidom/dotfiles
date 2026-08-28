@@ -1,3 +1,3 @@
-ble-import $HOME/.config/blesh/alias.sh
+ble-import -d $HOME/.config/blesh/alias.sh
 
 fastfetch

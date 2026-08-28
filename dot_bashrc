@@ -24,4 +24,3 @@ __init_ble() {
   [[ ! ${BLE_VERSION-} ]] || ble-attach
 }
 [[ $- == *i* ]] && __init_ble
-trap 'if [[ -z "${BASH_COMMAND//[[:space:]]}" ]]; then if command -v eza &> /dev/null; then eza -lh; else ls; fi; fi' 
