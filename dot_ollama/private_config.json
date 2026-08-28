@@ -1,0 +1,28 @@
+{
+  "integrations": {
+    "opencode": {
+      "models": [
+        "nemotron-3-super:cloud",
+        "minimax-m3:cloud",
+        "nemotron-3-ultra:cloud",
+        "gpt-oss:20b-cloud",
+        "gemma4:31b-cloud",
+        "qwen3:4b",
+        "gemma3:1b",
+        "gpt-oss:120b-cloud",
+        "nemotron-3-nano:30b-cloud",
+        "qwen3:1.7b",
+        "qwen3:0.6b",
+        "qwen3:8b"
+      ]
+    },
+    "qwen": {
+      "models": [
+        "qwen3:8b"
+      ],
+      "onboarded": true
+    }
+  },
+  "last_model": "qwen3:1.7b",
+  "last_selection": "opencode"
+}
