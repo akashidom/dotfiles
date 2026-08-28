@@ -141,3 +141,5 @@ alias du='du -h -d 1'  # Summarize directory usage
 alias free='free -h'  # Memory usage
 alias psg='ps aux | grep -v grep | grep -i -e VSZ -e'  # Process search
 alias histg='history | grep'  # History search
+alias brightnessmin='brightnessctl set 1%'
+alias brightnessmax='brightnessctl set 100%'
