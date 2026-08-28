@@ -2,8 +2,8 @@
   "integrations": {
     "opencode": {
       "models": [
-        "nemotron-3-super:cloud",
         "minimax-m3:cloud",
+        "nemotron-3-super:cloud",
         "nemotron-3-ultra:cloud",
         "gpt-oss:20b-cloud",
         "gemma4:31b-cloud",
