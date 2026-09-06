@@ -11,9 +11,9 @@
 # DON'T CHANGE THIS FILE
 
 # You can define your custom configuration by adding
-# files in ~/.config/bashrc 
-# or by creating a folder ~/.config/bashrc/custom
-# with copies of files from ~/.config/bashrc 
+# files in ~/.config/bashrc.d 
+# or by creating a folder ~/.config/bashrc.d/custom
+# with copies of files from ~/.config/bashrc.d 
 # You can also create a .bashrc_custom file in your home directory
 # -----------------------------------------------------
 
@@ -21,9 +21,9 @@
 # Load modular configuration
 # -----------------------------------------------------
 
-for f in ~/.config/bashrc/*; do 
+for f in ~/.config/bashrc.d/*; do 
     if [ ! -d $f ]; then
-        c=`echo $f | sed -e "s=.config/bashrc=.config/bashrc/custom="`
+        c=`echo $f | sed -e "s=.config/bashrc.d=.config/bashrc.d/custom="`
         [[ -f $c ]] && source $c || source $f
     fi
 done
