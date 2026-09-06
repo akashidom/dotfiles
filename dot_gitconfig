@@ -1,11 +1,18 @@
 [credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+helper=
+helper=!/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+helper=
+helper=!/usr/bin/gh auth git-credential
 [init]
-	defaultBranch = main
+defaultBranch=main
 [user]
-	email = akashidomon@gmail.com
-	name = akashidom
+email=akashidomon@gmail.com
+name=akashidom
+[core]
+editor=/usr/bin/re.sonny.Commit
+
+[re.sonny.Commit]
+title-length-hint=50
+body-length-wrap=72
+auto-capitalize-title=true
